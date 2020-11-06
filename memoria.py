@@ -1,6 +1,6 @@
 import sys
 from random import sample
-from ListasUFRJ.PLE.memoriagui import *
+from JogodaMemoria.memoriagui import *
 from PyQt5.QtWidgets import QMainWindow,QApplication
 class Main(QMainWindow,Ui_MainWindow):
     # globais
