@@ -32,5 +32,6 @@ sudo apt-get install qttools5-dev-tools
 
 ---
 ## Contato
-<img src="https://github.com/gusantos1/icons/blob/main/ytube.jpg" width="20" height="20">
+<img src="https://github.com/gusantos1/icons/blob/main/ytube.jpg" width="20" height="20"> https://rb.gy/4xltia
+
 :email:  gusantos.ok@gmail.com
