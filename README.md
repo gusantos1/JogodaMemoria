@@ -28,6 +28,9 @@ sudo apt-get install pyqt5-dev-tools
 sudo apt-get install qttools5-dev-tools
 ```
 ---
+# Telas de execução
 
-
-
+---
+## Contato
+#### Para mais informações, dúvidas, sugestões ou trabalho:
+:email:  gusantos.ok@gmail.com
