@@ -1,4 +1,4 @@
-# Jogo da Memória em pyQt5
+# Jogo da Memória em pyQt5 <img src="https://github.com/gusantos1/icons/blob/main/pylogo2.jpg" width="100" height="100">
 ---
 Esse projeto foi desenvolvido com base no exercício proposto da lista 11 de ciência da computação da UFRJ.
 ##### :heavy_exclamation_mark: Se você é aluno da UFRJ saiba que esse github possui várias resoluções de exercícios de computação que provavelmente você terá que lidar durante o período.:heavy_exclamation_mark:
@@ -40,5 +40,6 @@ sudo apt-get install qttools5-dev-tools
 <img src="https://github.com/gusantos1/icons/blob/main/008-youtube.svg" width="20" height="20"> | *Canal Puxei Comp: https://rb.gy/4xltia*
 <img src="https://github.com/gusantos1/icons/blob/main/telegram.svg" width="20" height="20"> | *guilhermemak*
 <img src="https://github.com/gusantos1/icons/blob/main/010-linkedin.svg" width="20" height="20"> |*gusantosdev
+---
 
 
