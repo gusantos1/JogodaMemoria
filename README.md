@@ -1,4 +1,4 @@
-# Jogo da Memória em pyQt5 <img src="https://github.com/gusantos1/icons/blob/main/pylogo2.jpg" width="100" height="100">
+# Jogo da Memória dos Times Cariocas em pyQt5 <img src="https://github.com/gusantos1/icons/blob/main/pylogo2.jpg" width="100" height="100">
 ---
 Esse projeto foi desenvolvido com base no exercício proposto da lista 11 de ciência da computação da UFRJ.
 > Tecnlogias:
