@@ -30,7 +30,8 @@ sudo apt-get install pyqt5-dev-tools
 sudo apt-get install qttools5-dev-tools
 ```
 ---
-# Telas de execução
+# Tela de execução
+![](https://im5.ezgif.com/tmp/ezgif-5-096c33b21108.gif)
 
 ---
 ## Contato
