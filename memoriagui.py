@@ -47,7 +47,7 @@ class Ui_MainWindow(object):
         self.btn0x2.setFont(font)
         self.btn0x2.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../../../Área de Trabalho/ast.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("icons/ast.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btn0x2.setIcon(icon)
         self.btn0x2.setIconSize(QtCore.QSize(140, 210))
         self.btn0x2.setObjectName("btn0x2")
@@ -261,4 +261,4 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Jogo da Memória [Guilherme SIlva]"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Jogo da Memória dos Times Cariocas [Guilherme SIlva]"))

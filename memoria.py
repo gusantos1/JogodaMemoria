@@ -4,7 +4,8 @@ from JogodaMemoria.memoriagui import *
 from PyQt5.QtWidgets import QMainWindow,QApplication
 class Main(QMainWindow,Ui_MainWindow):
     # globais
-    elementos_matriz = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8]
+    elementos_matriz = [numero for numero in range(1, 9)]*2
+    print(elementos_matriz)
     matriz = []
     jogadas = termina = c = 0
     def __init__(self):
@@ -75,26 +76,26 @@ class Main(QMainWindow,Ui_MainWindow):
         """Função que inicialmente adiciona asteriscos nos botões"""
         for x in range(0, 4):
             for y in range(0, 4):
-                eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("../../../../Área de Trabalho/ast.png"))')
+                eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("icons/ast.png"))')
     def add_icon(self, x, y):
         """Função que adiciona o ícone no botão conforme o valor referente na matriz."""
         if self.matriz[x][y*4] == 1:
-            eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("../../../../Área de Trabalho/g1.png"))')
+            eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("icons/g1.png"))')
         elif self.matriz[x][y*4] == 2:
-            eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("../../../../Área de Trabalho/g2.png"))')
+            eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("icons/g2.png"))')
         elif self.matriz[x][y*4] == 3:
-            eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("../../../../Área de Trabalho/g3.png"))')
+            eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("icons/g3.png"))')
         elif self.matriz[x][y*4] == 4:
-            eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("../../../../Área de Trabalho/g4.png"))')
+            eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("icons/g4.png"))')
         elif self.matriz[x][y*4] == 5:
-            eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("../../../../Área de Trabalho/g5.png"))')
+            eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("icons/g5.png"))')
         elif self.matriz[x][y*4] == 6:
-            eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("../../../../Área de Trabalho/g6.png"))')
+            eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("icons/g6.png"))')
         elif self.matriz[x][y*4] == 7:
-            eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("../../../../Área de Trabalho/g7.png"))')
+            eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("icons/g7.png"))')
         else:
-            eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("../../../../Área de Trabalho/g8.png"))')
-        return eval(f'self.btn{x}x{y}.setIconSize(QtCore.QSize(140,210))')
+            eval(f'self.btn{x}x{y}.setIcon(QtGui.QIcon("icons/g8.png"))')
+        return eval(f'self.btn{x}x{y}.setIconSize(QtCore.QSize(140,140))')
     def input_btn0x0(self):
         x, y = 0, 0
         self.add_icon(x, y)
@@ -172,8 +173,8 @@ class Main(QMainWindow,Ui_MainWindow):
             self.matriz[x1][y1 * 4 + 3] = False
             self.ln_resultado.setText('\t\t\tVocê errou... tente de novo.')
             #Retorna asterisco se não formar par.
-            eval(f'self.btn{x1}x{y1}.setIcon(QtGui.QIcon("../../../../Área de Trabalho/ast.png"))')
-            eval(f'self.btn{x2}x{y2}.setIcon(QtGui.QIcon("../../../../Área de Trabalho/ast.png"))')
+            eval(f'self.btn{x1}x{y1}.setIcon(QtGui.QIcon("icons/ast.png"))')
+            eval(f'self.btn{x2}x{y2}.setIcon(QtGui.QIcon("icons/ast.png"))')
         else:
             self.termina += 1
             self.ln_resultado.setText('\t\t\tParabéns você acertou !')
@@ -181,7 +182,7 @@ class Main(QMainWindow,Ui_MainWindow):
             self.matriz[x1][y1 * 4 + 2] = True
             self.matriz[x2][y2 * 4 + 2] = True
             if self.termina == 8:
-                self.ln_resultado.setText(f'\t\tParabéns! Você descobriu todas as casas com {self.jogadas} jogadas')
+                self.ln_resultado.setText(f'\t\tParabéns! Você descobriu todos os times com {self.jogadas} jogadas')
         print(f'Jogadas: {self.jogadas}, termina: {self.termina}')
 if __name__ == '__main__':
     app = QApplication(sys.argv)
