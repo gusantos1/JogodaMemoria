@@ -31,7 +31,7 @@ sudo apt-get install qttools5-dev-tools
 ```
 ---
 # Tela de execução
-![](https://im5.ezgif.com/tmp/ezgif-5-096c33b21108.gif)
+![](https://media.giphy.com/media/6a7cHBPiOqYe1HylVV/giphy.gif)
 
 ---
 ## Contato
